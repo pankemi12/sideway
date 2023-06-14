@@ -1,0 +1,11 @@
+from scipy.integrate import quad
+
+# Define the function to integrate
+def f(x):
+    return x**2
+
+# Perform integration using quad()
+result, error = quad(f, 0, 2)  # integrate f(x) from 0 to 2
+
+print("Result:", result)
+print("Error:", error)
